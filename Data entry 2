@@ -17,8 +17,12 @@
   <label for="date">Date Added:</label><br>
   <input type="text" id="date" name="date">
   <!--are solutions something to be added or automatically printed out-->
+  </form>
+  <form action ="link to a are you sure pop-up">
   <input type="submit" value="Submit">
+  </form>
+  <form action ="link to a are you sure pop-up">
   <input type="reset">
-</form>
+  </form>
 </body>
 </html>
