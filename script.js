@@ -11,20 +11,41 @@
 //         console.log(`error ${request.status} ${request.statusText}`);
 //     }
 // }
+const app = document.getElementById('root');
+const logo = document.createElement('img');
+logo.src = 'http://pngimg.com/imgs/nature/earth/';
+const container = document.createElement('div');
+container.setAttribute('class', 'container');
+app.appendChild(logo);
+app.appendChild(container);
+
+
 
 var request = new XMLHttpRequest();
-request.open('GET', 'https://discosweb.esoc.esa.int/api/objects', true);
-request.onload = function (){
+request.open('GET', 'https://ghibliapi.herokuapp.com/films', true);
+request.onload = function () {
     var data = JSON.parse(this.response);
 
-    if(request.status >= 200 && request.status < 400){
+    if (request.status >= 200 && request.status < 400) {
         data.forEach((spaceObject) => {
-        console.log(spaceObject.name);
-    })
+            const card = document.createElement('div')
+            card.setAttribute('class', 'card')
+
+            const h1 = document.createElement('h1');
+            h1.textContent = spaceObject.title;
+            
+            container.appendChild(card);
+            card.appendChild(h1);
+
+            console.log(spaceObject.title);
+        })
     } else {
+        const errorMessage = document.createElement('marquee')
+        errorMessage.textContent = 'ITS NOT WORKING'
+        app.appendChild(errorMessage)
         console.log('error');
     }
-    
-    
+
+
 }
 request.send();
