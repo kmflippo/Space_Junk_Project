@@ -1,6 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
     <title>Page Title</title>
     <script src="script.js"></script>
     <link rel="navigation" type="text/css" href="mystyle.css">
@@ -34,6 +77,11 @@
   
   </head>
 <body>
+  <style>
+    body {
+      background-image: url('https://www.jurist.org/news/wp-content/uploads/sites/4/2020/04/space_1586291230.jpg');
+    }
+    </style>
   <nav class="navbar navbar-expand-lg navbar-light bg-dark">
     <span class="navbar-brand">Space junk </span>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,16 +104,16 @@
     </ul>
   </div>
   </nav>
-    <form>
-  <label for="name">Name:</label><br>
+    <form style="color:white; text-align:center;">
+  <label for="name">Name of Object:</label><br>
   <input type="text" id="name" name="name"><br>
-  <label for="type">Type:</label><br>
+  <label for="type">Object Class:</label><br>
   <input type="text" id="type" name="type"><br>
   <label for="region">Orbiting Region:</label><br>
   <input type="text" id="region" name="region"><br>
-  <label for="size">Size:</label><br>
+  <label for="size">Size in Meters:</label><br>
   <input for="text" id="size" name="size"><br>
-  <label for="amount">Amount (percentage):</label><br>
+  <label for="amount">Amount:</label><br>
   <input type="text" id="amount" name="amount"><br>
   <label for="damage">Type of Damage:</label><br>
   <input type="text" id="damage" name="damage"><br>
@@ -73,10 +121,8 @@
   <input type="text" id="date" name="date"><br>
   <!--are solutions something to be added or automatically printed out-->
   </form>
-  <form action ="link to a are you sure pop-up"><br>
-  <input type="submit" value="Submit"><br>
-  </form>
-  <form action ="link to a are you sure pop-up"><br>
+  <form style="color:white; text-align:center;"; action ="link to a are you sure pop-up"><br>
+  <input type="submit" value="Submit">
   <input type="reset"><br>
   </form>
 </body>
