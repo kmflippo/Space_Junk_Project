@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 html{
     scroll-behavior: smooth;
   }
@@ -77,14 +77,4 @@ html{
   
   .text-dec{
     color:black;
-=======
-body {
-    background-color: lightblue;
-    
-  }
-  
-  h1 {
-    color: navy;
-    margin-left: 20px;
->>>>>>> master
   }
