@@ -1,0 +1,78 @@
+html{
+    scroll-behavior: smooth;
+  }
+  
+  body{
+  background-image: linear-gradient(to bottom, #002244 , #002244 , #002244);
+  background-size: auto; 
+  background-repeat: y-repeat;
+  }
+  
+  header{
+    background-image: url(https://www.jurist.org/news/wp-content/uploads/sites/4/2020/04/space_1586291230.jpg);
+    height: 600px;
+    background-size: cover; 
+    color: white;
+  }
+  
+  #btn{
+  padding-top: 100px;
+  }
+  
+  .btn{
+    display:flex;
+    justify-content: space-between;
+  }
+  
+  
+  
+  .main{
+    height: 900px
+  }
+  
+  .tips{
+  margin-top:20px;
+    font-size: 18px;
+    color:white;
+    margin-right: 50px;
+    margin-left: 50px;
+    border:solid black 2px;
+  }
+  
+  .info{
+    background-color:#0E2346;
+    color:ivory;
+    
+  }
+  
+  /*footer css*/
+  .bottom{
+    background-image: url("https://spacenews.com/wp-content/uploads/2018/05/24359364107_152b0152ff_k-879x485.jpg");
+    background-attachment: fixed;
+    background-position:bottom, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+   
+  }
+  
+  .space{
+  display: inline-flex;
+  justify-content: space-evenly;
+  
+  }
+  
+  .footer{
+    
+    color:white;
+    font-size:25px;
+  }
+  
+  .row{
+    display:flex;
+    flex-direction:row;
+  }
+  
+  .text-dec{
+    color:black;
+  }
