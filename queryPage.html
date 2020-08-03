@@ -3,7 +3,7 @@
   <head>
     <title>Page Title</title>
     <script src="script.js"></script>
-    <link rel="navigation" type="text/css" href="mystyle.css">
+    <link rel="navigation" type="text/css" href="navigation.css">
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -31,6 +31,8 @@
     <script src="https://kit.fontawesome.com/317ec5153f.js" crossorigin="anonymous">
   
     </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   
   </head>
 <body>
@@ -64,27 +66,49 @@
     </ul>
   </div>
   </nav>
-    <form style="color:white; text-align:center;">
-  <label for="name">Name of Object:</label><br>
-  <input type="text" id="name" name="name"><br>
-  <label for="type">Object Class:</label><br>
-  <input type="text" id="type" name="type"><br>
-  <label for="region">Orbiting Region:</label><br>
-  <input type="text" id="region" name="region"><br>
-  <label for="size">Size in Meters:</label><br>
-  <input for="text" id="size" name="size"><br>
-  <label for="amount">Amount:</label><br>
-  <input type="text" id="amount" name="amount"><br>
-  <label for="damage">Type of Damage:</label><br>
-  <input type="text" id="damage" name="damage"><br>
-  <label for="date">Date Added:</label><br>
-  <input type="text" id="date" name="date"><br>
-  <!--are solutions something to be added or automatically printed out-->
-  
-  <form style="color:white; text-align:center;"><br>
-  <input type="submit" value="Submit">
-  <input type="reset" value="Reset"><br>
-  </form>
-</form>
+<p>
+  <br>
+  <br>
+  <br>
+<form style="color:white; text-align:center; font-size:20px;">
+    <div class="w3-dropdown-hover">
+        <button class="w3-button">Shape</button>
+        <div class="w3-dropdown-content w3-bar-block w3-border">
+          <a href="#" class="w3-bar-item w3-button">Cylinder</a>
+          <a href="#" class="w3-bar-item w3-button">Sphere</a>
+          <a href="#" class="w3-bar-item w3-button">Cone + Cyl</a>
+          <a href="#" class="w3-bar-item w3-button">Cone</a>
+        </div>
+      </div>
+
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">Depth</button>
+        <div class="w3-dropdown-content w3-bar-block w3-border">
+          <a href="#" class="w3-bar-item w3-button">Section 1</a>
+          <a href="#" class="w3-bar-item w3-button">Section 2</a>
+          <a href="#" class="w3-bar-item w3-button">Section 3</a>
+          <a href="#" class="w3-bar-item w3-button">Section 4</a>
+        </div>
+      </div>
+      
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">Mass</button>
+        <div class="w3-dropdown-content w3-bar-block w3-border">
+          <a href="#" class="w3-bar-item w3-button">Section 1</a>
+          <a href="#" class="w3-bar-item w3-button">Section 2</a>
+          <a href="#" class="w3-bar-item w3-button">Section 3</a>
+          <a href="#" class="w3-bar-item w3-button">Section 4</a>
+        </div>
+      </div>
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">Class</button>
+        <div class="w3-dropdown-content w3-bar-block w3-border">
+          <a href="#" class="w3-bar-item w3-button">Payload</a>
+          <a href="#" class="w3-bar-item w3-button">Section 2</a>
+          <a href="#" class="w3-bar-item w3-button">Section 3</a>
+          <a href="#" class="w3-bar-item w3-button">Section 4</a>
+        </div>
+      </div>
+</p>
 </body>
 </html>
